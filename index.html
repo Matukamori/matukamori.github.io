@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>Responsive Testimonial Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+</head>    
+<body>
+    <div id="page" class="site">
+        <div class="container">
+            <div class="testi">
+                <div class="head">
+                </div>
+                <div class="body swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="Images/Lucho.jpg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>Un creativo dinámico, siempre buscando nuevas maneras de llevar creatividad a sus clientes. Responsable y lo mejor, buen tipo, buena persona, un punto fundamental para integrar un equipo de trabajo.</p>
+                                    <div class="name">
+                                        <h4>Lucho Cecchini</h4>
+                                        <p>CEO & Board Member Universe VC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="Images/JP.jpg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>Inquieto y lleno de ideas. Hemos compartido campañas y eventos. Pone cabeza y corazón en cada proyecto, y se mueve permanentemente en post de encontrar las mejores soluciones para dinámicas creativas. Totally recomended!!</p>
+                                    <div class="name">
+                                        <h4>Juan Pablo Barrale</h4>
+                                        <p>Corporate Affairs Manager at CCU Argentina</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="Images/Sabri.jpeg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>Con la proactividad que lo caracteriza, introdujo contenidos innovadores con un gran efecto multiplicador. Su habilidad en comunicación, permitio visibilizar edición tras edición, acciones superadoras y valiosas para FECOL.  </p>
+                                    <div class="name">
+                                        <h4>Sabrina Kloster</h4>
+                                        <p>Manager of CICAE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="Images/Diego.jpg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>A modo general, un buen tipo con el que da gusto trabajar. En detalle, la característica destacable ante su trabajo es su poder de organización y administración, matizado siempre con su creatividad...  </p>
+                                    <div class="name">
+                                        <h4>Diego Trapasso</h4>
+                                        <p>Consultant and Creative Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="Images/Uli.jpeg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>Matias es una persona muy proactiva, con un perfil innovador en la gestion y administración de los recursos, generando más y mejores formas de acompañar a los emprendimientos y fomentar la co-creación.</p>
+                                    <div class="name">
+                                        <h4>Sebastian Rossin</h4>
+                                        <p>Director of Innovation and Entrepreneurship at the National University of Litoral</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                 </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoHeight: true,
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+</body>
+</html>
